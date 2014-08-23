@@ -17,11 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
          setsolve = setsolve,
          getsolve = getsolve)
 }
-
-
 ## Returns the inverse of a matrix from the cache if it has already been caculated.
 ## Otherwise the function stores the inverse and returns the inverse function.
-
 cacheSolve <- function(x, ...) {
     m <- x$getsolve()
     if(!is.null(m)) {
