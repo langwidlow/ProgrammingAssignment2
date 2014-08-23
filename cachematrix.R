@@ -1,5 +1,5 @@
-## The makeCacheMatrix function returns a list object with 4 matrix functions that allow
-## users to cache the inverse of a matrix.
+## These functions prepare a special matrix that caches the inverse of the matrix to
+## speed up computation for repeated operations.
 
 ## Return 4 matrix functions in a list. This function assumes the input of an invertible
 ## matrix as indicated in the project description.
@@ -28,6 +28,5 @@ cacheSolve <- function(x, ...) {
     data <- x$get()
     m <- solve(data, ...)
     x$setsolve(m)
-    m
-        ## Return a matrix that is the inverse of 'x'
+    m  ## Return a matrix that is the inverse of 'x'
 }
